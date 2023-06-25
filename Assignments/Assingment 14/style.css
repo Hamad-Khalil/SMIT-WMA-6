@@ -1,0 +1,87 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(156, 156, 198)
+}
+
+.str{
+    margin-left: 360px;
+    margin-top: 50px ;
+    margin-right: 310px;
+}
+#input>input{
+    color: rgb(255, 255, 255);
+    height: 110px;
+    width: 688px;
+    font-size: 50px;    
+    background-color: #0C134F;
+    text-align: right;
+    border: 1px solid white;
+}
+#btn{
+    background-color: #1b2479;
+    border: 5px solid #1b2479;
+    
+ 
+}
+button{
+    margin: 5px;
+    margin-left: 6px;
+    width: 80px;
+    height: 60px;
+    color: #1b2479;
+}
+button:hover{
+    color: white;
+    background-color:#0c0e22;;
+}
+.num{
+    color: #1b2479;
+    font-size: xx-large;
+    border-radius: 40px;
+    border: 1px solid black;
+
+}
+.exp1{
+    font-size: xx-large;    
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #1b2479;
+}
+.exp{
+    color: #1b2479;
+    font-size: larger;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+ #AC {
+    height: 60px;
+    margin-left: 20px;
+     width: 150px;
+     font-size: x-large;
+      border: 1px solid black;
+    border-radius: 10px;
+
+}
+#AC :hover{
+    color: white;
+    background-color:#0c0e22;;
+}
+.eql:hover{
+    background-color: rgb(101, 13, 13);
+}
+.eql{
+    color: white;
+    height: 60px;
+    margin-left: 10px;
+    font-size: x-large;
+    background-color: rgb(180, 30, 30);
+    border-radius: 10px;
+}
+.row1{
+    padding-top: 10px;
+}
+/* .normal{
+width: 100px;
+} */

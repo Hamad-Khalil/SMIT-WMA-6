@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="str">
+            <div id="input">
+                <input type="text" id="inp" placeholder="0">
+            </div>
+            <div id="btn">
+                <div class="row1">          
+                    <button class="exp" onclick="findSq()">x^2</button>
+                    <button class="exp" onclick="findPcntg()">%</button>
+                      <button onclick="change" id="SC" style="margin: 5px;
+                      width: 80px;
+                      height: 60px;
+                      background: none;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-radius: 10px;
+                      font-size: x-large;
+                     ; background-color: white;"><a style="text-decoration: none;"href="index.html">Sci</a></button>
+                    <button id="AC" onclick="clearALL()">AC</button>
+                </div>
+                <div class="row2">
+                    <button class="num">7</button>
+                    <button class="num">8</button>
+                    <button class="num">9</button>
+                    <button class="exp1">X</button>
+                    <button class="exp1">/</button>
+                </div>
+                <div class="row3">
+                    <button class="num">4</button>
+                    <button class="num">5</button>
+                    <button class="num">6</button>
+                    <button class="exp1">-</button>
+                    <button class="exp1">(</button>
+                </div>
+                <div class="row4">
+                    <button class="num">1</button>
+                    <button class="num">2</button>
+                    <button class="num">3</button>
+                    <button class="exp1">+</button>
+                    <button class="exp1">)</button>
+                </div>
+                <div class="row5">
+                    <button class="num">0</button>
+                    <button class="num">00</button>
+                    <button class="num">.</button>
+                    <button class="exp" onclick="Delete()">Del</button>
+                    <button class="eql" onclick="y.value= eval(y.value)">=</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  <script>
+     let x = document.querySelectorAll(".num");
+        let y = document.querySelector("#inp");
+        let z = document.querySelectorAll(".exp1")
+        for (item of z) {
+            item.addEventListener('click', (e) => {
+                btntext = e.target.innerText;
+                if (btntext == 'X') {
+                    btntext = '*';
+                }
+
+                y.value += btntext;
+            })
+        }
+        for (item of x) {
+            item.addEventListener('click', (e) => {
+                btntxt = e.target.innerText;
+                y.value += btntxt;
+            })
+        }
+        function clearALL() {
+            document.getElementById('inp').value = ''
+        }
+        function Delete() {
+            let del = document.getElementById('inp').value;
+            document.getElementById('inp').value = del.slice(0, -1)
+        }
+        function findSq() {
+            let input = document.getElementById("inp").value
+            let sq = Math.pow(input, 2)
+            document.getElementById("inp").value = sq
+        }
+        function findPcntg(){
+            let sol= eval(y.value)
+            y.value= sol*100
+        }
+  </script>
+</body>
+
+</html>
+</body>
+</html>

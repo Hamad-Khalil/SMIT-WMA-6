@@ -1,0 +1,76 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+header{
+}
+.nav{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+}
+.brand{
+    display: inline;
+    font-size: xx-large;
+}
+.nav>nav>ul{
+    display: flex;
+    width: 700px;
+    height: 30px;
+    margin-left: 90px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.nav>nav>ul>li {
+    list-style: none;
+    float: left;
+    display: flex;
+}
+a{
+    color:  #F79E0E;
+    font-size: larger;
+    display: flex;
+    position: relative;
+    left: 350px;
+}
+.rocket-text>p{
+    width:550px; 
+}
+.vector1>li{
+    list-style: url(Vector\ \(1\).png);
+}
+.vector2>li{
+list-style: url(Vector\ \(1\).png);
+}
+button{
+   width: 200px;
+   height: 50px;
+   border-radius: 100px;
+   display: block;
+}
+.rocket{
+    position: absolute;
+    left: 700px;
+    top: 150px;
+}
+.shopify{
+    width: fit-content;
+    position: absolute;
+    left: 800px;
+    top: 1000px ;
+}
+.shopify>h6{
+    width: 200px;
+}
+.shopify>h2{
+    width: 450px;
+}
+.shopify>p{
+    height: fit-content;
+    width: 400px;
+}

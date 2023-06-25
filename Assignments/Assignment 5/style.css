@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 224);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.container {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+img {
+    display: inline;
+    margin-top: 20px;
+    width: 75px;
+    height: 40px;
+}
+
+div.nav {
+    display: flex;
+    height: 70px;
+}
+
+div.nav>nav>ul {
+    display: flex;
+    margin-left: 70px;
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.nav>nav>ul>li {
+    width: 120px;
+    list-style: none;
+}
+
+.book {
+    position: absolute;
+    left: 1150px;
+    top: -5px;
+    width: 120px;
+    height: 45px;
+}
+
+div.discover>p {
+    opacity: 85%;
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    width: 400px;
+    height: 200px;
+    margin-top: 90px;
+}
+
+div.Text1>p {
+    opacity: 90%;
+    font-family: sans-serif;
+    opacity: 85%;
+    width: 340px;
+    font-stretch: normal;
+    font-size: medium;
+    margin-top: 50px;
+}
+
+div.box {
+    background-color: w;
+    border: 3px solid red;
+    width: 400px;
+    height: 65px;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding-left: 8px;
+}
+
+div.pass>img {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: 750px;
+    top: 100px;
+}
+
+div.Categories>h1 {
+    font-size: 55px;
+}
+
+div.Categories>p {
+    opacity: 85%;
+    width: 340px;
+}
+
+div.arrow1 {
+    border: 3px solid rgb(44, 43, 43);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1200px;
+    top: 690px;
+}
+
+div.arrow2 {
+    border: 3px solid rgb(44, 43, 43);
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1260px;
+    top: 690px;
+    color: white;
+    background-color: black;
+}
+
+.mountain {
+    width: 200px;
+    height: 330px;
+}
+
+.camera {
+    width: 450px;
+    height: 500px;
+}
+
+div.experience {
+    position: absolute;
+    left: 750px;
+    top: 1350px;
+}
+
+div.experience>h5 {
+    color: #F66F4D;
+}
+
+div.experience>h3 {
+    font-size: 40px;
+    width: 400px;
+}
+
+div.experience>p {
+    width: 400px;
+}
+
+div.states1 {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 750px;
+    top: 1620px;
+}
+
+.states {
+    width: 130px;
+    height: 130px;
+}
+
+div.destination {
+    width: 300px;
+    font-size: 23px;
+}
+
+div.arrow3 {
+    border: 3px solid rgb(44, 43, 43);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1200px;
+    top: 1900px;
+}
+
+div.arrow4 {
+    border: 3px solid rgb(44, 43, 43);
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1900px;
+    left: 1260px;
+    color: white;
+    background-color: black;
+}
+
+div.tour {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+div.tourhiking {
+    width: 310px;
+}
+
+div.tourhiking>img {
+    width: 310px;
+    height: 220px;
+}
+
+div.book1 {
+    border: 2px solid #2D3134;
+    background-color: #2D3134;
+    color: white;
+    justify-content: center;
+    display: flex;
+    width: 100px;
+    border-radius: 20px;
+    position: relative;
+    left: 250px;
+    top: -30px;
+}
+
+div.machu {
+    width: 310px;
+    margin-left: 40px;
+}
+
+div.machu>img {
+    width: 310px;
+    height: 220px;
+}
+
+div.book2 {
+    color: #2D3134;
+    border: 2px solid #2D3134;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    width: 100px;
+    border-radius: 18px;
+    position: relative;
+    top: -30px;
+    left: 250px;
+}
+
+div.arizona {
+    width: 310px;
+    margin-left: 40px;
+}
+
+div.arizona>img {
+    width: 310px;
+    height: 220px;
+}
+
+div.book3 {
+    color: #2D3134;
+    border: 2px solid #2D3134;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    width: 100px;
+    border-radius: 18px;
+    position: relative;
+    top: -40px;
+    left: 250px;
+}
+
+div.cut {
+    width: 310px;
+    margin-left: 40px;
+}
+
+div.cut>img {
+    width: 310px;
+    height: 220px;
+}
+
+div.abc {
+    margin-left: 200px;
+    width: 900px;
+    text-align: center;
+}
+
+div.abc>h1 {
+    font-size: 50px;
+}
+
+div.country {
+    display: flex;
+    justify-content: center;
+}
+
+div.london {
+    color: white;
+    background-color: #2D3134;
+    width: 90px;
+    border: 3px solid #2D3134;
+    text-align: center;
+    border-radius: 15px;
+}
+
+div.bangkok {
+    width: 90px;
+    border: 3px solid #2D3134;
+    text-align: center;
+    border-radius: 15px;
+}
+
+div.england {
+    width: 90px;
+    border: 3px solid #2D3134;
+    text-align: center;
+    border-radius: 15px;
+}
+
+div.Singapore {
+    width: 90px;
+    border: 3px solid #2D3134;
+    text-align: center;
+    border-radius: 15px;
+}
+
+div.Italy {
+    width: 90px;
+    border: 3px solid #2D3134;
+    text-align: center;
+    border-radius: 15px;
+}
+
+div.imgallery>img {
+    width: 200px;
+    height: 200px;
+}

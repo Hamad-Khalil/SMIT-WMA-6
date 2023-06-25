@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="str">
+            <div id="input">
+                <input type="text" id="inp" placeholder="0">
+            </div>
+            <div id="btn">
+
+                <div class="row1">
+                  
+                    <button class="exp col" value="In" >In</button>
+                    <button class="exp col" value="^2" onclick="findSq()" >x^2</button>
+               
+                    <button class="exp" value="%">%</button>
+                    <button class="exp" value="Ans" >Ans</button>
+                      <button  id="SC" style="margin: 5px;
+                      width: 80px;
+                      height: 60px;
+                      background: none;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-radius: 10px;
+                      font-size: x-large;
+                      background-color: white;"><a style="text-decoration: none;" href="index2.html">Sci</a></button>
+                    <button id="AC" onclick="clearALL()">AC</button>
+                </div>
+                <div class="row2">
+                    <button class="exp col" value="cos" >cos</button>
+                    <button class="exp col" value="log" >log</button>
+                    <button class="num" onclick="appendToResult('7')">7</button>
+                    <button class="num" value="8" onclick="appendToResult('8')">8</button>
+                    <button class="num" value="9" onclick="appendToResult('9')">9</button>
+                    <button class="exp1" value="X" onclick="appendToResult('*')">x</button>
+                    <button class="exp1" value="/" onclick="appendToResult('/')">/</button>
+                </div>
+                <div class="row3">
+                    <button class="exp col" value="tan" >tan</button>
+                    <button class="exp" value="3.14" onclick="appendToResult('(3.14)')"> Pi</button>
+                    <button class="num" value="4" onclick="appendToResult('4')">4</button>
+                    <button class="num" value="5" onclick="appendToResult('5')">5</button>
+                    <button class="num" value="6" onclick="appendToResult('6')">6</button>
+                    <button class="exp1" value="-" onclick="appendToResult('-')">-</button>
+                    <button class="exp1" value="(" onclick="appendToResult('(')">(</button>
+                </div>
+                <div class="row4">
+                    <button class="exp col" value="sin" onclick="appendToResult('sin')">sin</button>
+                    <button class="exp col" value="rad" onclick="appendToResult('rad')">rad</button>
+                    <button class="num" value="1" onclick="appendToResult('1')">1</button>
+                    <button class="num" value="2" onclick="appendToResult('2')">2</button>
+                    <button class="num" value="3" onclick="appendToResult('3')">3</button>
+                    <button class="exp1" value="+" onclick="appendToResult('+')">+</button>
+                    <button class="exp1" value=")" onclick="appendToResult(')')">)</button>
+                </div>
+                <div class="row5">
+                    <button class="exp col" value="*10^" onclick="appendToResult('*10^')">Exp</button>
+                    <button style="border: 1px solid black;
+                    border-radius: 10px;" class="col" onclick="appendToResult('√')" ><img src="Vector.png" alt="" width="30%"></button>
+                    <button class="num" value="0" onclick="appendToResult('0')">0</button>
+                    <button class="num" value="00" onclick="appendToResult('00')">00</button>
+                    <button class="num" value="." onclick="appendToResult('.')">.</button>
+                    <button class="exp" onclick="Delete()">Del</button>
+                    <button class="eql" onclick="cal()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+       function appendToResult(value){
+        document.getElementById("inp").value += value
+    }
+    function clearALL(){
+        document.getElementById('inp').value= ''
+    }
+    function Delete(){
+    let del= document.getElementById('inp').value;
+    document.getElementById('inp').value= del.slice(0,-1)
+    }
+    function findSq(){
+        let input= document.getElementById("inp").value
+        let sq= Math.pow(input, 2)
+        document.getElementById("inp").value= sq
+    }
+    function cal(){
+        let x= document.getElementById('inp').value
+        try{
+            let calRes= eval(x);
+            document.getElementById('inp').value=calRes;
+        }
+        catch(Erorr){
+            document.getElementById('inp').value= "Erorr"
+        }
+    }
+
+    </script>
+
+</body>
+
+</html>
