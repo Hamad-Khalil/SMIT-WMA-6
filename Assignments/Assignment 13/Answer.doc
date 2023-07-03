@@ -1,0 +1,30 @@
+Assignment 13: Please provide your answers to the following questions:
+
+1- How can we access HTML elements using the Document Object Model (DOM) in JavaScript?
+   * getElemetById
+   It is used to get the HTML element with specific ID.
+   * getElementByClassName
+   It is used to get elements with the same class.
+   * getElementsByTagName
+   It is used to get elemenet by a tag.
+   *querySelector
+   It is CSS selector used to get the HTML element just like we get in CSS(by id,
+   class, tag name, element etc).It returns only first element.
+   * querySelectorAll
+   It is also a CSS selector used to get HTMl elemenet same as we get in CSS.
+   It is the most powefull selector.
+
+
+2- What activities can be performed using the DOM?
+  We can perform following activities by using DOM.
+  * Acessing Elements.
+  * Manipulating Elements.
+  * Modify HTML structure.
+  * Respond to an event.
+
+
+3- What are event listeners in the DOM?
+Event Listner is the specific action or code triggerd when user perform any action 
+on websit like click, scroll etc.
+Event listner is an essential part of web development. It allows a dyanmic 
+behavoir for user.
