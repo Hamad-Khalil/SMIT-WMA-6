@@ -4,7 +4,7 @@
 // function greeting(fullName){
 //     console.log(`Hello ${fullName}`);
 // }
- 
+  
 // // 2. Create a second function that has two arguments: the first one is a
 // // string for the user's full name, and the second is the callback
 // // function.
